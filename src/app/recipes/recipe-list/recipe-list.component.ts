@@ -8,6 +8,7 @@ import { Recipe } from '../recipe';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [];
+  recipe = new Recipe('Dummy', 'Dummy', 'http://thumbs.ebaystatic.com/d/l225/m/mfXELL6zPWJE4OC0agiXMZw.jpg');
 
   constructor() { }
 
