@@ -8,7 +8,7 @@ import { Recipe } from '../recipe';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [];
-  @Output() selectedRecipe = new EventEmitter<Recipe>();
+  @Output() recipeSelected = new EventEmitter<Recipe>();
   recipe = new Recipe('Dummy', 'Dummy', 'http://thumbs.ebaystatic.com/d/l225/m/mfXELL6zPWJE4OC0agiXMZw.jpg');
 
   constructor() { }
@@ -17,7 +17,7 @@ export class RecipeListComponent implements OnInit {
   }
 
   onSelected(recipe: Recipe) {
-    this.selectedRecipe.emit(recipe);
+    this.recipeSelected.emit(recipe);
   }
 
 }
