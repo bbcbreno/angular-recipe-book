@@ -12,6 +12,7 @@ export class RecipeDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.selectedRecipe = new Recipe('jDummy', 'jDumy', 'http://4.bp.blogspot.com/-RBuRPj2WQJs/TbgVeyN2TQI/AAAAAAAAAoY/eUD7kVx7Kjk/s1600/tracejado.jpg');
   }
 
 }
